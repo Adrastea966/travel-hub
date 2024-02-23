@@ -5,6 +5,7 @@ import OffersAndBlog from './Components/OffersAndBlog.js';
 import TravelSafe from './Components/TravelSafe.js';
 import Reviews from './Components/Reviews.js';
 import News from './Components/Newsletter.js';
+import Footer from './Components/Footer.js';
 import './App.css';
 
 function App() {
@@ -22,6 +23,8 @@ function App() {
       <Reviews />
       {/* Newsletter */}
       <News />
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
