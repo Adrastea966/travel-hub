@@ -31,7 +31,7 @@ function OffersAndBlog() {
                     <div className='blog'>
                         <div className='blog-card'>
                             <img src='#'></img>
-                             <div className='blog-card-contain'>
+                            <div className='blog-card-contain'>
                                 <div className='blog-card-contain-top'>
                                     <h4>5 things you...</h4>
                                     <h5>1 Feb</h5>
@@ -41,11 +41,11 @@ function OffersAndBlog() {
                                     <h5>Activities</h5>
                                     <a href='#'>Read article<IoIosArrowForward /></a>
                                 </div>
-                             </div>
+                            </div>
                         </div>
                         <div className='blog-card'>
                             <img src='#'></img>
-                             <div className='blog-card-contain'>
+                            <div className='blog-card-contain'>
                                 <div className='blog-card-contain-top'>
                                     <h4>5 things you...</h4>
                                     <h5>1 Feb</h5>
@@ -55,11 +55,11 @@ function OffersAndBlog() {
                                     <h5>Activities</h5>
                                     <a href='#'>Read article<IoIosArrowForward /></a>
                                 </div>
-                             </div>
+                            </div>
                         </div>
                         <div className='blog-card'>
                             <img src='#'></img>
-                             <div className='blog-card-contain'>
+                            <div className='blog-card-contain'>
                                 <div className='blog-card-contain-top'>
                                     <h4>5 things you...</h4>
                                     <h5>1 Feb</h5>
@@ -69,11 +69,11 @@ function OffersAndBlog() {
                                     <h5>Activities</h5>
                                     <a href='#'>Read article<IoIosArrowForward /></a>
                                 </div>
-                             </div>
+                            </div>
                         </div>
                         <div className='blog-card'>
                             <img src='#'></img>
-                             <div className='blog-card-contain'>
+                            <div className='blog-card-contain'>
                                 <div className='blog-card-contain-top'>
                                     <h4>5 things you...</h4>
                                     <h5>1 Feb</h5>
@@ -83,10 +83,9 @@ function OffersAndBlog() {
                                     <h5>Activities</h5>
                                     <a href='#'>Read article<IoIosArrowForward /></a>
                                 </div>
-                             </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
