@@ -3,6 +3,7 @@ import Header from './Components/Header.js'
 import Main from './Components/Main.js'
 import OffersAndBlog from './Components/OffersAndBlog.js';
 import TravelSafe from './Components/TravelSafe.js';
+import Reviews from './Components/Reviews.js';
 import './App.css';
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
       <OffersAndBlog />
       {/* Travel Safe */}
       <TravelSafe />
+      {/* Reviews */}
+      <Reviews />
     </div>
   );
 }
