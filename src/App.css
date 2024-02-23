@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+/*Reset css*/
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Start of the site -------------------------------------------*/
+/*Header*/
+.navbar{
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.navbar-container-links{
+  display:flex;
+  gap:2rem;
+  font-size: 1.6em;
+}
+
+.navbar-container-links .blog-link,
+.help-link {
+  cursor: pointer;
+}
+
+.navbar-container-logo .logo-link{
+  font-size: 2em;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.navbar-container-buttons{
+  display:flex;
+  gap:2rem;
+}
+
+.navbar-container-buttons .btn-1,
+.btn-2 {
+  display:flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
+  gap: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-container-buttons img {
+    width: 2rem;
 }
