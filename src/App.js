@@ -4,6 +4,7 @@ import Main from './Components/Main.js'
 import OffersAndBlog from './Components/OffersAndBlog.js';
 import TravelSafe from './Components/TravelSafe.js';
 import Reviews from './Components/Reviews.js';
+import News from './Components/Newsletter.js';
 import './App.css';
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
       <TravelSafe />
       {/* Reviews */}
       <Reviews />
+      {/* Newsletter */}
+      <News />
     </div>
   );
 }

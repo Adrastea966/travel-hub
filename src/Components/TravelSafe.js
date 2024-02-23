@@ -4,8 +4,8 @@ import '../App.css';
 
 function TravelSafe() {
     return (
-        <div className='travel'>
-            <div className='container-travel-safe'>
+        <div className='container'>
+            <div className='travel'>
                 <div className='travel-safe-img'>
                     <img src='#'></img>
                 </div>

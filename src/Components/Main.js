@@ -8,8 +8,8 @@ import '../App.css';
 
 function Main() {
   return (
-    <div className='main'>
-      <div className='container-main'>
+    <div className='container'>
+      <div className='main'>
         <div className='container-data-entry-template'>
             <h1>Choose your next destination</h1>
             <div className='data-entry-template'>

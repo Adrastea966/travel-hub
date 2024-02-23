@@ -3,8 +3,8 @@ import '../App.css';
 
 function Reviews() {
     return (
-        <div className='reviews'>
-            <div className='container-reviews'>
+        <div className='container'>
+            <div className='reviews'>
                 <h1>What people think</h1>
                 <div className='container-reviews-cards'>
                     <div className='container-reviews-card-top'>
