@@ -1,13 +1,13 @@
 import React from 'react';
-import { IoIosArrowDown } from "react-icons/io";
-import { MdHelp } from "react-icons/md";
-import { PiAirplaneTiltFill } from "react-icons/pi";
+import { IoIosArrowDown } from 'react-icons/io';
+import { MdHelp } from 'react-icons/md';
+import { PiAirplaneTiltFill } from 'react-icons/pi';
 import UsaFlag from '../img/flag-usa.png';
 import '../App.css';
 
 function Header() {
   return (
-    <div className="header">
+    <div className='header'>
       <nav className='navbar'>
         <div className='navbar-container-links'>
           <div className='blog-link'>Blog <IoIosArrowDown /></div>
