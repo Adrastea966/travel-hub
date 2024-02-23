@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Components/Header.js'
 import Main from './Components/Main.js'
+import OffersAndBlog from './Components/OffersAndBlog.js';
 import './App.css';
 
 function App() {
@@ -10,6 +11,8 @@ function App() {
       <Header />
       {/* Main */}
       <Main />
+      {/* Offers and blog */}
+      <OffersAndBlog />
     </div>
   );
 }
