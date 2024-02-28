@@ -2,51 +2,52 @@
 *,
 ::after,
 ::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    overflow-x: hidden;
-    min-height: 100vh;
+  overflow-x: hidden;
+  min-height: 100vh;
 }
 
 html {
-    font-size: 62.5%;
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 ul,
 ol {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 /*Helper*/
-.container{
+.container {
   width: 100%;
   min-height: 100vh;
   padding: 2rem;
+  margin: 0 auto;
 }
 
 /*Start of the site -------------------------------------------*/
 /*Header -------------------------------------------*/
-.navbar{
+.navbar {
   width: 100%;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   padding: 2rem;
 }
 
-.navbar-container-links{
-  display:flex;
-  gap:2rem;
+.navbar-container-links {
+  display: flex;
+  gap: 2rem;
   font-size: 1.6em;
 }
 
@@ -55,28 +56,203 @@ a {
   cursor: pointer;
 }
 
-.navbar-container-logo .logo-link{
+.navbar-container-logo .logo-link {
   font-size: 2em;
   font-weight: 700;
   cursor: pointer;
 }
 
-.navbar-container-buttons{
-  display:flex;
-  gap:2rem;
+.navbar-container-buttons {
+  display: flex;
+  gap: 2rem;
 }
 
 .navbar-container-buttons .btn-1,
 .btn-2 {
-  display:flex;
+  display: flex;
   align-items: center;
   cursor: pointer;
   gap: 1rem;
 }
 
+.navbar-container-buttons .btn-1{
+  width: 8rem;
+  height: 4rem;
+  display:flex;
+  justify-content: center;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: transparent;
+  font-weight: 600;
+}
+
+.navbar-container-buttons .btn-2{
+  width: 12rem;
+  height: 4rem;
+  display:flex;
+  justify-content: center;
+  font-weight: 600;
+  background-color: #6088EF;
+  color:#fff;
+  border: transparent;
+  border-radius: 5px;
+}
+
 .navbar-container-buttons img {
-    width: 2rem;
+  width: 2rem;
 }
 
 /*Main -------------------------------------------*/
+.main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main-principal-carrousel {
+  position: relative;
+  z-index: 1;
+}
+
+.degrade{
+  position: absolute;
+  content: '';
+  background-image: linear-gradient(to bottom, transparent, #fff);
+  width: 100%;
+  height: 70vh;
+  z-index: 2;
+  bottom:0;
+}
+
+.carrousel-main-img {
+  width: 100%;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  filter: brightness(80%);
+}
+
+.container-data-entry-template {
+  position: absolute;
+  z-index: 2;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  top:35%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.data-entry-template{
+  width: 80rem;
+  height: 8rem;
+  border-radius: 100px;
+  display:flex;
+  font-size: 2em;
+  justify-content: center;
+  align-items: center;
+  gap:.1rem;
+}
+
+.destiny-data-entry,
+.calendar-data-entry,
+.passengers-data-entry{
+  display:flex;
+  gap:1rem;
+  align-items: center;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem 4rem 2rem 4rem;
+  box-shadow: 2px 2px 5px #00000076;
+}
+
+.search{
+  background-color: #6088EF;
+  border-radius: 10px;
+  padding: 2rem 4rem 2rem 4rem;
+  color:#fff;
+  box-shadow: 2px 2px 5px #00000076;
+  cursor: pointer;
+}
+
+.container-data-entry-template .icon-arrow-down {
+  font-size: 4em;
+  color:#fff;
+  padding-top: 6rem;
+  cursor: pointer;
+}
+
+.container-data-entry-template h1 {
+  font-size: 5em;
+  color: #fff;
+  padding-bottom: 2rem;
+}
+
+.container-most-visited-destinations{
+  position: absolute;
+  z-index: 2;
+  top:80%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  align-items: center;
+  display:flex;
+  flex-direction: column;
+  gap:2rem;
+}
+
+.container-most-visited-destinations h2{
+  color:#000;
+  font-size: 2rem;
+}
+
+.containter-carrousel-most-visited-destinations{
+  display:flex;
+  gap:1rem;
+}
+
+.carrousel-card{
+  width: 20rem;
+  height: 20rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #00000076;
+  display:flex;
+  flex-direction: column;
+}
+
+.carrousel-card strong{
+  margin-right: 1rem;
+}
+
+.carrousel-card p{
+  font-size: 1.6em;
+  display:flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+
+.carrousel-img {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 18vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Offers and blog -------------------------------------------*/
