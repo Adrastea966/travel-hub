@@ -31,15 +31,15 @@ function Main() {
 
           <Splide>
             <SplideSlide>
-              <img className='carrousel-main-img' src="https://res.cloudinary.com/duumn6wv5/image/upload/travel-hub/Australia_ib1ecj" alt="Slide 1" />
+              <img className='carrousel-main-img' src="https://res.cloudinary.com/duumn6wv5/image/upload/travel-hub/Australia_lduv0o" alt="Slide 1" />
               <div className='degrade'></div>
             </SplideSlide>
             <SplideSlide>
-              <img className='carrousel-main-img' src="https://res.cloudinary.com/duumn6wv5/image/upload/travel-hub/Australia_ib1ecj" alt="Slide 2" />
+              <img className='carrousel-main-img' src="https://res.cloudinary.com/duumn6wv5/image/upload/travel-hub/Orlando_nnlnvm" alt="Slide 2" />
               <div className='degrade'></div>
             </SplideSlide>
             <SplideSlide>
-              <img className='carrousel-main-img' src="https://res.cloudinary.com/duumn6wv5/image/upload/travel-hub/Australia_ib1ecj" alt="Slide 3" />
+              <img className='carrousel-main-img' src="https://res.cloudinary.com/duumn6wv5/image/upload/travel-hub/Germany_bbh9ik" alt="Slide 3" />
               <div className='degrade'></div>
             </SplideSlide>
           </Splide>

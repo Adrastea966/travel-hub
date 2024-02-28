@@ -7,7 +7,7 @@ function TravelSafe() {
         <div className='container'>
             <div className='travel'>
                 <div className='travel-safe-img'>
-                    <img src='#'></img>
+                    <img src='https://res.cloudinary.com/duumn6wv5/image/upload/travel-hub/avion_xjveer'></img>
                 </div>
                 <div className='travel-safe-contain'>
                     <h1>With TravelHub you can travel safely</h1>
