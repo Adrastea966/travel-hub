@@ -37,7 +37,7 @@ function OffersAndBlog() {
                             <a href='#'>Se all<IoIosArrowForward /></a>
                         </div>
                         <div className='blog'>
-                            <div className='blog-card'>
+                            <div data-aos="fade-left" className='blog-card'>
                                 <img src='https://res.cloudinary.com/duumn6wv5/image/upload/travel-hub/image-ny-blog_qt2lxm'></img>
                                 <div className='blog-card-contain'>
                                     <div className='blog-card-contain-top'>
@@ -51,7 +51,7 @@ function OffersAndBlog() {
                                     </div>
                                 </div>
                             </div>
-                            <div className='blog-card'>
+                            <div data-aos="fade-left" data-aos-delay="100" className='blog-card'>
                                 <img src='https://res.cloudinary.com/duumn6wv5/image/upload/travel-hub/image-tur-blog_nmx1hy'></img>
                                 <div className='blog-card-contain'>
                                     <div className='blog-card-contain-top'>
@@ -65,7 +65,7 @@ function OffersAndBlog() {
                                     </div>
                                 </div>
                             </div>
-                            <div className='blog-card'>
+                            <div data-aos="fade-left" data-aos-delay="150" className='blog-card'>
                                 <img src='https://res.cloudinary.com/duumn6wv5/image/upload/travel-hub/image-gastro-blog_er2lzo'></img>
                                 <div className='blog-card-contain'>
                                     <div className='blog-card-contain-top'>
@@ -79,7 +79,7 @@ function OffersAndBlog() {
                                     </div>
                                 </div>
                             </div>
-                            <div className='blog-card'>
+                            <div data-aos="fade-left" data-aos-delay="200" className='blog-card'>
                                 <img src='https://res.cloudinary.com/duumn6wv5/image/upload/travel-hub/mujer-viajera_kjcus0'></img>
                                 <div className='blog-card-contain'>
                                     <div className='blog-card-contain-top'>

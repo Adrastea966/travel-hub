@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Header from './Components/Header.js'
 import Main from './Components/Main.js'
 import OffersAndBlog from './Components/OffersAndBlog.js';
@@ -9,6 +11,15 @@ import Footer from './Components/Footer.js';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      offset: 120,
+      duration: 500,
+      easing: 'ease-in-out',
+      once: true
+    });
+  }, []);
+
   return (
     <div className='App'>
       {/* Header */}
