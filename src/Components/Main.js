@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { IoLocation } from 'react-icons/io5';
 import { FaRegCalendar } from 'react-icons/fa6';
@@ -9,7 +9,14 @@ import '@splidejs/splide/dist/css/splide.min.css';
 import '../App.css';
 
 function Main() {
- 
+
+  const scrollToDown = () => {
+    const header = document.getElementById('blog');
+    if (header) {
+      header.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className='container'>
       <div className='main'>
@@ -24,18 +31,18 @@ function Main() {
               <span>o</span>
               <span>s</span>
               <span className='span-right'>e</span>
-    
+
               <span>y</span>
               <span>o</span>
               <span>u</span>
               <span className='span-right'>r</span>
- 
+
               <span>n</span>
               <span>e</span>
               <span>x</span>
               <span className='span-right'>t</span>
-        
-              <span>d</span> 
+
+              <span>d</span>
               <span>e</span>
               <span>s</span>
               <span>t</span>
@@ -49,12 +56,12 @@ function Main() {
             </div>
 
             <div className='data-entry-template'>
-              <div className='destiny-data-entry'><IoLocation />Destiny</div>
-              <div className='calendar-data-entry'><FaRegCalendar />mon, 19 feb - thue 20feb</div>
-              <div className='passengers-data-entry'><FaUser />2</div>
-              <div className='search'><a href='#'><IoSearchSharp /></a></div>
+              <div data-aos="fade-down" className='destiny-data-entry'><IoLocation />Destiny</div>
+              <div data-aos="fade-down" data-aos-delay="100" className='calendar-data-entry'><FaRegCalendar />mon, 19 feb - thue 20feb</div>
+              <div data-aos="fade-down" data-aos-delay="150" className='passengers-data-entry'><FaUser />2</div>
+              <div data-aos="fade-down" data-aos-delay="200" className='search'><a href='#'><IoSearchSharp /></a></div>
             </div>
-            <div data-aos="fade-down" className='icon-arrow-down'>
+            <div data-aos="fade-down" className='icon-arrow-down' onClick={scrollToDown}>
               <IoIosArrowDown />
             </div>
           </div>

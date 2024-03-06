@@ -5,7 +5,7 @@ import '../App.css';
 function OffersAndBlog() {
     return (
         <div className='container'>
-            <div className='offers-and-blog'>
+            <div className='offers-and-blog' id='blog'>
 
                 <div className='container-offers-and-blog'>
                     <div className='container-offers'>

@@ -32,20 +32,63 @@ a {
 }
 /*Start of the site -------------------------------------------*/
 /*Header -------------------------------------------*/
+.space{
+  content: '';
+  width: 100%;
+  height: 6rem;
+  background-color: #fff;
+}
 .navbar {
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.639); /* Cambia el color de fondo y ajusta la opacidad según tu diseño */
+  backdrop-filter: blur(10px);
+  box-shadow: 2px 2px 5px #00000020;
+  z-index: 1000; 
 }
 .navbar-container-links {
   display: flex;
   gap: 2rem;
   font-size: 1.6em;
 }
-.navbar-container-links .blog-link,
-.help-link {
+.navbar-container-links .help-link {
   cursor: pointer;
+}
+.navbar-container-links .menu-item {
+  position: relative;
+}
+.navbar-container-links .sub-menu {
+  width: 25rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px #00000076;
+  border-radius: 10px;
+  z-index: 3;
+  color: #000;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out; 
+  pointer-events: none;
+}
+.navbar-container-links .menu-item:hover .sub-menu {
+  opacity: 1;  
+  pointer-events: auto; 
+}
+.navbar-container-links .sub-menu li {
+  padding: 1.6rem;
+}
+.navbar-container-links .sub-menu li a {
+  transition: .2s ease-in-out;
+}
+.navbar-container-links .sub-menu li a:hover {
+  color:#6088EF;
 }
 .navbar-container-logo .logo-link {
   font-size: 2em;
@@ -72,6 +115,7 @@ a {
   border-radius: 5px;
   background-color: transparent;
   font-weight: 600;
+  background-color: #fff;
 }
 .navbar-container-buttons .btn-2{
   width: 12rem;
@@ -83,6 +127,10 @@ a {
   color:#fff;
   border: transparent;
   border-radius: 5px;
+  transition: .2s ease-in-out;
+}
+.navbar-container-buttons .btn-2:hover{
+  background-color: #3663d6;
 }
 .navbar-container-buttons img {
   width: 2rem;
@@ -283,6 +331,11 @@ a {
   box-shadow: 2px 2px 5px #00000028;
   display:flex;
   flex-direction: column;
+  cursor: pointer;
+  overflow: hidden;
+}
+.carrousel-card:hover .carrousel-img {
+  transform: scale(1.1);
 }
 .carrousel-card strong{
   margin-right: 1rem;
@@ -299,6 +352,7 @@ a {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   height: 18vh;
+  transition: .3s ease-in-out;
 }
 /*Offers and blog -------------------------------------------*/
 .offers-and-blog{
@@ -334,10 +388,10 @@ a {
   flex-direction: column;
   font-size: 1.5em;
   align-items: center;
+  justify-content: space-between;
 }
 .btn-apply{
-  display:flex;
-  justify-content: flex-end;
+  padding-left: 8rem;
 }
 .apply{
   width: 10rem ;
@@ -346,6 +400,9 @@ a {
   border: transparent;
   color:#fff;
   cursor: pointer;
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .offer-1 img,
 .offer-2 img{
@@ -444,7 +501,7 @@ a {
   content: '';
   background-color: #fff;
   width: 100vw;
-  height: 100vh;
+  height: 10vh;
   transition: height .8s ease-in-out; 
   position: absolute;
 }
@@ -482,6 +539,42 @@ a {
   gap: 2rem;
   font-size: 3em;
   color:#6088EF;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.qualification .star-1,
+.qualification .star-2,
+.qualification .star-3,
+.qualification .star-4,
+.qualification .star-5 {
+  animation: fadeUp 2s infinite;
+}
+.qualification .star-1 {
+  animation-name: fadeUp;
+}
+.qualification .star-2 {
+  animation-name: fadeUp;
+  animation-delay: 0.2s;
+}
+.qualification .star-3 {
+  animation-name: fadeUp;
+  animation-delay: 0.4s; 
+}
+.qualification .star-4 {
+  animation-name: fadeUp;
+  animation-delay: 0.6s; 
+}
+.qualification .star-5 {
+  animation-name: fadeUp;
+  animation-delay: 0.8s; 
 }
 /*Reviews-------------------------------------------*/
 .container-reviews{
@@ -606,6 +699,12 @@ a {
   position: absolute;
   bottom:-8%;
   right:5%;
+}
+.arrow-up svg{
+  transition: .2s ease-in-out;
+}
+.arrow-up:hover svg{
+  transform: translateY(-5px)
 }
 .newsletter{
   width: 100%;

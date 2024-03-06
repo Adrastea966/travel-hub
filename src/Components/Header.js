@@ -7,12 +7,25 @@ import '../App.css';
 
 function Header() {
   return (
-    <div className='header'>
+    <div className='header' id='header'>
+      <div className='space'></div>
       <nav className='navbar'>
-        <div className='navbar-container-links'>
-          <div className='blog-link'>Blog <IoIosArrowDown /></div>
-          <div className='help-link'>Assistence <MdHelp /></div>
-        </div>
+        <ul className='navbar-container-links'>
+
+          <li className='menu-item blog-link'>
+            <a href='#'>Blog <IoIosArrowDown /></a>
+            <ul className='sub-menu'>
+              <li><a href='#'>Landscapes</a></li>
+              <li><a href='#'>Activities</a></li>
+              <li><a href='#'>Gastronomy</a></li>
+              <li><a href='#'>Cultural</a></li>
+              <li><a href='#'>Historical</a></li>
+              <li><a href='#'>Economic</a></li>
+            </ul>
+          </li>
+          <li className='menu-item help-link'>Assistence <MdHelp /></li>
+
+        </ul>
         <div className='navbar-container-logo'>
           <div className='logo-link'>TravelHub <PiAirplaneTiltFill /></div>
         </div>
